@@ -13,13 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{3c876bdd-3b1a-4261-8d10-05ec7f779bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pyengine">
+      <UniqueIdentifier>{a2bfcd48-1cdf-4c8b-9a7f-214adb34529b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pyx.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="common\customconsole.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sys.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="pyengine\commonpyfunc.cpp">
+      <Filter>pyengine</Filter>
+    </ClCompile>
+    <ClCompile Include="pyengine\pyengine.cpp">
+      <Filter>pyengine</Filter>
+    </ClCompile>
+    <ClCompile Include="pyengine\pywrap.cpp">
+      <Filter>pyengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\customconsole.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\platform.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\sys.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="pyengine\commonpyfunc.h">
+      <Filter>pyengine</Filter>
+    </ClInclude>
+    <ClInclude Include="pyengine\pyengine.h">
+      <Filter>pyengine</Filter>
+    </ClInclude>
+    <ClInclude Include="pyengine\pywrap.h">
+      <Filter>pyengine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

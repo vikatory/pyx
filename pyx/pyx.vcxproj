@@ -74,6 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\CODE\project_1\Python-3.5.0\PC;E:\CODE\project_1\Python-3.5.0\Include;$(ProjectDir);$(ProjectDir)pyengine;$(ProjectDir)common;E:\CODE\boost_1_59_0;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\CODE\project_1\Python-3.5.0\PCbuild\amd64;E:\CODE\boost_1_59_0\stage\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -96,7 +98,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -145,7 +147,20 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pyx.cpp" />
+    <ClCompile Include="common\customconsole.cpp" />
+    <ClCompile Include="common\sys.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pyengine\commonpyfunc.cpp" />
+    <ClCompile Include="pyengine\pyengine.cpp" />
+    <ClCompile Include="pyengine\pywrap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\customconsole.h" />
+    <ClInclude Include="common\platform.h" />
+    <ClInclude Include="common\sys.h" />
+    <ClInclude Include="pyengine\commonpyfunc.h" />
+    <ClInclude Include="pyengine\pyengine.h" />
+    <ClInclude Include="pyengine\pywrap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
