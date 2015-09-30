@@ -179,8 +179,8 @@ void log_python_exception()
 
 		if (traceback_obj != NULL)
 		{
-			strErrorMsg += "Traceback:";
-			PyObject *pModuleName = PyBytes_FromString("traceback");
+			strErrorMsg += "\nTraceback:";
+			PyObject *pModuleName = PyUnicode_FromString("traceback");
 			PyObject *pTraceModule = PyImport_Import(pModuleName);
 			Py_XDECREF(pModuleName);
 			if (pTraceModule != NULL)

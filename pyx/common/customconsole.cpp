@@ -72,7 +72,7 @@ void _wprintc(AnyType text, const char *textColor, const char *backColor)
 	//SetConsoleTextAttribute(handle, fore | back | 128);
 	SetConsoleTextAttribute(handle, fore);
 	std::cout << text;
-	fore = GetForeColor("white_h");
+	fore = GetForeColor("white");
 	SetConsoleTextAttribute(handle, fore);
 	//CloseHandle(handle);
 }

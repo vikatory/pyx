@@ -74,7 +74,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\CODE\project_1\Python-3.5.0\PC;E:\CODE\project_1\Python-3.5.0\Include;$(ProjectDir);$(ProjectDir)pyengine;$(ProjectDir)common;E:\CODE\boost_1_59_0;$(IncludePath)</IncludePath>
+    <IncludePath>E:\CODE\project_1\Python-3.5.0\PC;E:\CODE\project_1\Python-3.5.0\Include;$(ProjectDir);$(ProjectDir)app;$(ProjectDir)pyengine;$(ProjectDir)common;E:\CODE\boost_1_59_0;$(IncludePath)</IncludePath>
     <LibraryPath>E:\CODE\project_1\Python-3.5.0\PCbuild\amd64;E:\CODE\boost_1_59_0\stage\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -103,6 +103,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalOptions> /D _CRT_SECURE_NO_WARNINGS  /D _SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,17 +148,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="app\app.cpp" />
+    <ClCompile Include="common\common.cpp" />
+    <ClCompile Include="common\customcommand.cpp" />
     <ClCompile Include="common\customconsole.cpp" />
     <ClCompile Include="common\sys.cpp" />
+    <ClCompile Include="crawler\crawler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pyengine\commonpyfunc.cpp" />
     <ClCompile Include="pyengine\pyengine.cpp" />
     <ClCompile Include="pyengine\pywrap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="app\app.h" />
+    <ClInclude Include="common\common.h" />
+    <ClInclude Include="common\customcommand.h" />
     <ClInclude Include="common\customconsole.h" />
     <ClInclude Include="common\platform.h" />
     <ClInclude Include="common\sys.h" />
+    <ClInclude Include="crawler\crawler.h" />
     <ClInclude Include="pyengine\commonpyfunc.h" />
     <ClInclude Include="pyengine\pyengine.h" />
     <ClInclude Include="pyengine\pywrap.h" />

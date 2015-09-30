@@ -19,6 +19,12 @@
     <Filter Include="pyengine">
       <UniqueIdentifier>{a2bfcd48-1cdf-4c8b-9a7f-214adb34529b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="crawler">
+      <UniqueIdentifier>{fbb24f01-6888-42d7-90a8-7b07593f45b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{576f0697-84b3-41b3-acd1-a0551ac85737}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -42,6 +48,18 @@
     <ClCompile Include="pyengine\pywrap.cpp">
       <Filter>pyengine</Filter>
     </ClCompile>
+    <ClCompile Include="app\app.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="common\customcommand.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\common.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="crawler\crawler.cpp">
+      <Filter>crawler</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common\customconsole.h">
@@ -61,6 +79,18 @@
     </ClInclude>
     <ClInclude Include="pyengine\pywrap.h">
       <Filter>pyengine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\app.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="common\customcommand.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="crawler\crawler.h">
+      <Filter>crawler</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

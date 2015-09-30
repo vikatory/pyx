@@ -9,4 +9,16 @@ print (scriptRoot)
 import cm
 print(dir(cm))
 
-1/0
+# 1/0
+
+
+
+import crawler
+crawler.test()
+
+
+
+
+
+
+

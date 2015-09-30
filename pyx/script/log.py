@@ -27,7 +27,7 @@ class OutPut:
 			cm.cwrite("python:  ", "yellow_h", "")
 		self.__curLineWrtCnt += 1
 
-		cm.cwrite(str(s))
+		cm.cwrite(str(s))  # c++层使用gbk编码, c++层已做处理
 		
 	def writeline(self, sl):
 		map(self.write, sl)
